@@ -1,0 +1,74 @@
+.navbar-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem; /* Adjust padding as needed */
+  height: 60px; /* Adjust height as needed */
+  color: rgb(49, 49, 49);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.username-text {
+  margin-left: 8px;
+}
+
+.user-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 4px;
+  width: 200px; /* Consistent width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure dropdown stays on top */
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #555;
+}
+
+/* Optional: Make the dropdown menu disappear after clicking outside */
+.dropdown-menu::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #444 transparent;
+}

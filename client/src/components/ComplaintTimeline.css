@@ -1,0 +1,19 @@
+.cards-container{
+  display: flex;
+  margin: 2rem 4rem;
+  gap: 3rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon{
+  color: green;
+}
+
+@media(max-width: 720px){
+  .cards-container{
+    flex-direction: column;
+  }
+}

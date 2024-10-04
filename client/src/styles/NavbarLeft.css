@@ -1,0 +1,63 @@
+.navbar-left {
+  padding-top: 2rem;
+  width: 200px; /* Slightly wider for a more polished look */
+  background-color: #333;
+  height: 100vh;
+  color: white;
+  position: fixed; /* Fix the sidebar position */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Ensures the list takes up the full height */
+}
+
+.navbar-left ul li {
+  padding: 15px;
+  padding-left: 0;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}
+
+.navbar-left ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Aligns text and icon */
+  width: 100%;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+  padding: 10px 15px; /* Consistent padding */
+}
+
+.navbar-left ul li a:hover {
+  background-color: #555; /* Adds background color on hover */
+  padding-left: 20px; /* Smooth padding effect */
+}
+
+.navbar-left ul li a svg {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 20px; /* Adjust icon size */
+}
+
+.navbar-left ul li:last-child {
+  border-bottom: none;
+}
+
+/* Custom scrollbar */
+.navbar-left::-webkit-scrollbar {
+  width: 10px;
+}
+
+.navbar-left::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}

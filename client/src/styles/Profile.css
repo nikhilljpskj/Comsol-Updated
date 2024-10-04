@@ -1,0 +1,92 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.profile-details,
+.profile-password {
+  flex: 1;
+}
+
+.profile-details {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-info strong {
+  color: #333;
+}
+
+.profile-password {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-password h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-password form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-password input {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.profile-password button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-password button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 1rem;
+  color: #d9534f;
+  font-size: 1rem;
+}

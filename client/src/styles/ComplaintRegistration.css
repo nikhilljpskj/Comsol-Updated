@@ -1,0 +1,54 @@
+.complaint-registration {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .complaint-registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .complaint-registration form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .complaint-registration input,
+  .complaint-registration textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .complaint-registration button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .complaint-registration button:hover {
+    background-color: #0056b3;
+  }
+  
+  .location-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location-fields input {
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
